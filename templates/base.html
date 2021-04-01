@@ -1,0 +1,14 @@
+{% for elements in results %}
+    <h1> Results </h1>
+
+    {% for dates in elements[0:] %}
+        <p>{{ dates }} </p>
+    {% endfor %}
+
+    <br>
+
+    {% for parallelogram in elements[1:] %}
+        <p>{{ parallelogram }} </p>
+    {% endfor %}
+
+{% endfor %}
